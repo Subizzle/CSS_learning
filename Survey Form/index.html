@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This is a survey form.</p>
+        <form id="survey-form">
+            <fieldset>
+              <label id="name-label">Enter Your Name: <input id="name" type="text" required placeholder="Full Name" /></label>
+              <label id="email-label">Enter Your Email: <input id="email" type="email" required placeholder="Email" /></label>
+              <label id="number-label">Age (Optional): <input id="number" type="number" min="12" max="120" placeholder="Age" /></label>
+              <label>How did you hear about us?
+                <select id="dropdown">
+                  <option value="">(select one)</option>
+                  <option value="1">Cave Wall</option>
+                  <option value="2">Newspaper</option>
+                </select>
+              </label>
+              <label><input type="radio" name="account-type" class="inline" value="open" /> Personal Account</label>
+              <label><input type="radio" name="account-type" class="inline" value="closed" /> Business Account</label> 
+              <label>
+                <input type="checkbox" value="do" /> I accept the terms and conditions.
+              </label>
+              <label>
+                <input type="checkbox" value="don't"/> I don't accept the terms and conditions.
+              </label>
+              <label>Provide a bio:
+                <textarea name="bio" rows="3" cols="30" placeholder="Write whatever"></textarea>
+              </label>        
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+            
+        </form>
+       
+    </body>
+</html>
